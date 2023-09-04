@@ -1,0 +1,11 @@
+    #build container
+    #docker build -t(tag) in28min/hello-world-python:0.0.2.RELEASE .(for build)
+
+    #run dettached mode container
+    #docker run -p 5000:5000 -d in28min/hello-world-python:0.0.2.RELEASE
+
+    #stop container
+    #docker container stop {id}
+
+    #Apine good linux for dockers
+    #pip = npm
