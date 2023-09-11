@@ -1,31 +1,31 @@
-    #build container
+###build container(needs to be in the cmd folder)
     #docker build -t(tag) badalo/hello-world-python:0.0.2.RELEASE .(for build)
 
-    #run dettached mode container
+###run dettached mode container
     #docker run -d -p 5000:5000 badalo/hello-world-python:0.0.2.RELEASE
 
-    #list running container
+###list running container
     #docker container ls
 
-    #stop container
+###stop container
     #docker container stop {id}
 
-    #container logs
+###container logs
     #docker container logs -f {id}
 
-    #images
-    docker images
+###images
+    #docker images
 
-    #history
-    docker history {id}
+###history
+    #docker history {id}
     
-    #push to repos
+###push to repos
     #docker push {name}
 
-    #Remove all containers stopped
+###Remove all containers stopped
     #docker container prune
 
-    #Remove images
+###Remove images
     #docker rmi {id-image}
 
     #Apine good linux for dockers
