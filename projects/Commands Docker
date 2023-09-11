@@ -25,8 +25,44 @@
 ###Remove all containers stopped
     #docker container prune
 
+###Remove all docker instances not running
+    #docker system prune -a
+
 ###Remove images
     #docker rmi {id-image}
-
-    #Apine good linux for dockers
+#---------------------------------------------
+###Apine good linux for dockers
     #pip = npm
+#---------------------------------------------
+###Network
+    #docker Network ls
+
+###See bridge connections
+    #docker Network inspect bridge
+#---------------------------------------------
+###Link microservices(One way for them to talk)
+    #docker run -d -p 8100:8100 --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --link currency-exchange badalo/currency-conversion:0.0.1-RELEASE
+
+###Custom network
+    #network create currency-network
+
+###Add container to custom network(best way for them to talk)
+    #docker run -d -p 8000:8000 --name=currency-exchange --network=currency-network  badalo/currency-exchange:0.0.1-RELEASE 
+    #docker run -d -p 8100:8100 --env CURRENCY_EXCHANGE_SERVICE_HOST=http://currency-exchange --name=currency-conversion --network=currency-network badalo/currency-conversion:0.0.1-RELEASE
+#---------------------------------------------
+###Docker Compose(similar to docker)
+
+###Run docker-compose file(file location)
+    #docker-compose up
+
+###Stop docker-compose
+    #docker-compose down
+
+###Detached mode
+    #docker-compose up -d
+
+###Configuration(validate yml file) 
+    #docker-compose config
+
+###images
+    #docker-compose images
