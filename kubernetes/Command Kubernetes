@@ -1,0 +1,19 @@
+#->Google
+
+###Deploy application
+#kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+
+###Expose to the outside world
+#kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+
+###Pods -> Smallest deployment unit is a collection of containers that can run on a host. This resource is created by clients and scheduled onto hosts.
+#kubectl get pods
+
+###Delete Pods
+#kubectl delete pods {name}
+
+###Scale to have 3 instances
+#kubectl scale deployment hello-world-rest-api --replicas=3
+
+###Order events by time
+#kubectl get events --sort-by=.metadata.creationTimestamp
