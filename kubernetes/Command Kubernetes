@@ -16,4 +16,10 @@
 #kubectl scale deployment hello-world-rest-api --replicas=3
 
 ###Order events by time
-#kubectl get events --sort-by=.metadata.creationTimestamp
+
+###Get info from ReplicaSets
+#kubectl get rs -o wide
+
+###Set new image 
+#kubectl set image deployment hello-world-rest-api(name deployment) hello-world-rest-api(container name)=in28min/hello-world-rest-api:0.0.2.RELEASE
+
