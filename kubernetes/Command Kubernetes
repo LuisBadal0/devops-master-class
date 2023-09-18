@@ -76,8 +76,12 @@
 
 ###If replicaSet sees all pods running, it doesn't update to new version(kind: ReplicaSet(deployment.yaml)). Needs to delete a pod
 
+###AutoDNS made by kubernetes
+
 ###Order by name services
 #kubectl get services --all-namespaces --sort-by=.metadata.name
+
+###Change LoadBalance to NodePort to save money
 
 
 
