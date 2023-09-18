@@ -65,3 +65,8 @@
 ###Apply changes to deployment.yaml
 #kubectl apply -f deployment.yaml
 
+###Delete services
+#kubectl delete all -l app={selector name}
+
+###See file diferences between version
+#kubectl diff -f {file}
