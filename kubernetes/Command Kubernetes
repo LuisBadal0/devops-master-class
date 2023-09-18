@@ -16,6 +16,7 @@
 #kubectl scale deployment hello-world-rest-api --replicas=3
 
 ###Order events by time
+#kubectl get events --sort-by=.metadata.creationTimestamp
 
 ###Get info from ReplicaSets
 #kubectl get rs -o wide
