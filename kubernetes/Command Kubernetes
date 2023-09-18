@@ -31,3 +31,12 @@
 #          Data gathering and store(legal requirements)
 
 #Zones -> Physical arthitecture in each Region
+
+###Gcloud local computer
+
+###///Installed Gcloud & kubectl on local machine
+###Login
+#gcloud auth login
+
+###Connect to cluster
+#gcloud container clusters get-credentials {cluster name} --region {name} --project {id}
