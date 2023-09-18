@@ -70,3 +70,14 @@
 
 ###See file diferences between version
 #kubectl diff -f {file}
+
+###Website ready
+#watch curl {address}
+
+###If replicaSet sees all pods running, it doesn't update to new version(kind: ReplicaSet(deployment.yaml)). Needs to delete a pod
+
+###Order by name services
+#kubectl get services --all-namespaces --sort-by=.metadata.name
+
+
+
