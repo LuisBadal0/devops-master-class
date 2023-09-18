@@ -24,3 +24,10 @@
 ###Set new image 
 #kubectl set image deployment hello-world-rest-api(name deployment) hello-world-rest-api(container name)=in28min/hello-world-rest-api:0.0.2.RELEASE
 
+
+###Region & Zones
+#Region -> Latency reasons for the application
+#          Availability(across multiple regions)
+#          Data gathering and store(legal requirements)
+
+#Zones -> Physical arthitecture in each Region
