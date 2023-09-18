@@ -53,3 +53,15 @@
 ###Get Logs
 #kubectl logs -f hello-world-rest-api-64988599db-b4bdc
 
+###Get yaml
+#kubectl get deployment hello-world-rest-api -o yaml
+
+###Save yaml deployment
+#kubectl get deployment hello-world-rest-api -o yaml > deployment.yaml
+
+###Save yaml services
+#kubectl get services hello-world-rest-api -o yaml > services.yaml
+
+###Apply changes to deployment.yaml
+#kubectl apply -f deployment.yaml
+
