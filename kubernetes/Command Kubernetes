@@ -40,3 +40,16 @@
 
 ###Connect to cluster
 #gcloud container clusters get-credentials {cluster name} --region {name} --project {id}
+
+###Kubernetes Rollout
+#kubectl rollout history deployment hello-world-rest-api
+
+###Add record
+#kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.3.RELEASE --record=true
+
+###Rollback
+#kubectl rollout undo deployment hello-world-rest-api --to-revision=1
+
+###Get Logs
+#kubectl logs -f hello-world-rest-api-64988599db-b4bdc
+
